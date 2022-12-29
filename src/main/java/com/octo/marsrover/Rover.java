@@ -40,8 +40,8 @@ public class Rover {
         System.out.println("Le Mars Rover tourne à gauche de  " + turnLeft + " degrès. ");
     }
     public void moveUp(){
-        while(currentPosition.getX()<target.getY()){
-            currentPosition.move();
+        while(currentPosition.getY()<target.getY()){
+            currentPosition.moveUp();
             System.out.println("Le Mars Rover se déplace vers le haut ");
         }
     }
