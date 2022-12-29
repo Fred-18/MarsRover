@@ -83,6 +83,21 @@ public class MarsRoverTest {
 
 
     }
+    @Test
+    public void shouldMoveToTarget(){
+        //given
+        Position target =  new Position(3,0);
+        Rover robot = new Rover(target);
+
+        //when
+        robot.moveToTarget();
+        System.out.println(robot);
+
+        //then
+        assertEquals(target.getX(),robot.getCurrentPosition().getX());
+        assertEquals(target.getY(),robot.getCurrentPosition().getY());
+
+    }
 
 
 
