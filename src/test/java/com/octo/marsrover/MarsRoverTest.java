@@ -72,24 +72,18 @@ public class MarsRoverTest {
     @Test
     public void shouldMoveUp() {
         //given
-        Position target =  new Position(0,1);
+        Position target =  new Position(1,8);
         Rover robot = new Rover(target);
 
         //when
         robot.moveUp();
 
         //then
-        // assertEquals(robot.getAngle(), 180);
-        assertEquals(robot.getCurrentPosition().getX(),target.getY());
+        assertEquals(robot.getCurrentPosition().getY(),target.getY());
 
 
     }
-        /*Si mon Rover monte je dois le monter soit
-        * -Avec un classe case qui s'incémente à chaque monter
-        * et qui de décrémente à chaque décente
-        * -Soit en  incémentent Y */
 
-        /*Afficher une aire de jeux */
 
 
 
