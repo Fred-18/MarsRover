@@ -15,9 +15,14 @@ public class Position {
         return y;
     }
     public int getX() {
+
         return x;
     }
     public void move(){
         x++;
+    }
+
+    public void moveUp() {
+        y++;
     }
 }
